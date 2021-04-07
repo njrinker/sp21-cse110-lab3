@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My journal (no one read except me!)</title>
+        <link rel="icon" type="image/jpg" href="/screenshots/calcifer.jpg" />
+    </head>
+    <body>
+        <header>
+            <h1>Journal for CSE 110</h1>
+            <nav>
+                <ol>
+                    <li><a href="#entry1">Entry 1</a></li>
+                    <li><a href="#entry2">Entry 2</a></li>
+                    <li><a href="#entry3">Entry 3</a></li>
+                </ol>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <audio controls>
+                <source src="audio/Hi.mp3" type="audio/mp3">
+            </audio>
+            <section id="entry1">
+                <h3>Monday, April 5th</h3>
+                <p>Today I accompolished these things:</p>
+                <ul>
+                <li>Went to discussion</li>
+                    <li>Went to class</li>
+                    <li>Worked on schoolwork</li>
+                    <li>Did some more schoolwork</li>
+                    <li>Finished off my day with some refreshing schoolwork</li>
+                </ul>
+                <p>But hey, it's <em>only</em> the second week, so it should only get <b>better</b> from here on out. Anyways here's a meme I like:</p>
+                <img src="screenshots/free.jpg" height="400px">
+            </section>
+            <br>
+            <section id="entry2">
+                <h3>Tuesday, April 6th</h3>
+                <p>Well, since I got so much done yesterday, I don't actually have that many assignments left to do. Here's what I've got:</p>
+                <ol>
+                    <li>I've gotta get renrolled in that class after getting mistakenly dropped</li>
+                    <li>I need to look over my group's Math HW to make certain it doesn't have any mistakes</li>
+                    <li>I should finish that assignement due on Thursday on practicing giving good feedback</li>
+                </ol>
+                <p><strong>Hey!</strong> I actually got that all done rather quick, <i>if I do say so myself.</i> 
+                    Now what? Maybe I should listen to some music. Here's one that reminds me of my teenage years:</p>
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/dvgZkm1xWPE" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            <br>
+            <section id="entry3">
+                <h3>Wednesday April 7th</h3>
+                <p>Well whadyaknow, look's like it's my birthday. Well what better way to celebrate than to do schoolwork. 
+                    Honestly, though, I <b>forgot</b> that I had this lab to do today. Well good thing I like coding!</p>
+                
+                <p>How is my day going, you ask? <i>Well</i> let me think about that... <b>I know!</b> I'll use a form to tell you!</p>
+                <div class="mood">
+                    <ul>
+                        <li><input type="radio" name="day"/>Best day of my life!</li>
+                        <li><input type="radio" name="day" checked/>Pretty good!</li>
+                        <li><input type="radio" name="day"/>Meh</li>
+                        <li><input type="radio" name="day"/>Could I just get to tomorrow already...</li>
+                        <li><input type="radio" name="day"/>Let's never speak of this day ever again.</li>
+                    </ul>
+                </div>
+                <p>Anyways, you can watch this video to see me go over a more difficult problem:</p>
+                <video width="320" height="180" controls>
+                    <source src="video/problem.mp4" type="video/mp4">
+                </video>
+                <details>
+                    <summary>Oops</summary>
+                    <p>Oops, it's vertical. Well that shouldn't be a problem for you, <em>right?</em></p>
+                </details>
+            </section>
+            <section id="form">
+                <h3>Your turn!</h3>
+                <form>
+                    <fieldset>
+                        <input type="checkbox" name="check">
+                        <label for="check">I am not a robot</label>
+                        <br>
+                        <label for="verify">Are you really me?</label>
+                        <input type="radio" name="verify"/>Yes
+                        <input type="radio" name="verify"/>No
+                        <input type="radio" name="verify"/>Wouldn't you like to know, bucko?
+                        <br>
+                        <label for="sig">Whatever, just give me an electronic signature to verify.</label>
+                        <input type="text" name="sig">
+                        <br>
+                        <label for="date">Don't forget the date!</label>
+                        <input type="date" name="date">
+                        <br>
+                        <p>Alright, now you can write the journal:</p>
+                        <textarea name="entry"></textarea>
+                        <br>
+                        <label for="mood">How are you feeling?</label>
+                        <input list="moods" name="mood" id="mood">
+                        <datalist id="moods">
+                            <option value="Happy">
+                            <option value="Sad">
+                            <option value="Angry">
+                            <option value="Sleepy">
+                            <option value="Hungry">
+                        </datalist>
+                        <br>
+                        <label for="cars">On a scale of 1 to 5 how bad of an element is HTML's selector, where any number 
+                            between 1 and 5 represents awful and any other number means just alright:</label>
+                        <select name="scale" id="scale">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <br>
+                        <button type="button">Click here when you're done!</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <hr>
+        <footer>
+            <span>&copy; Me</span>
+        </footer>
+    </body>
+</html>
