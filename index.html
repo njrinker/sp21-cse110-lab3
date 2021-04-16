@@ -4,55 +4,66 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My journal (no one read except me!)</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster|Raleway' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/index.css">
         <link rel="icon" type="image/jpg" href="/screenshots/calcifer.jpg" />
     </head>
     <body>
         <header>
+            <style>
+                h1 {
+                    color:purple;
+                }
+                #journal1 {
+                    color: #37898f;
+                }
+                .journal3 {
+                    color: hsla(115, 48%, 45%, 0.795);
+                }
+            </style>
             <h1>Journal for CSE 110</h1>
             <nav>
                 <ol>
                     <li><a href="#entry1">Entry 1</a></li>
-                    <li><a href="#entry2">Entry 2</a></li>
+                    <li><a href="#entry2" target="_link2">Entry 2</a></li>
                     <li><a href="#entry3">Entry 3</a></li>
                 </ol>
             </nav>
         </header>
         <hr>
         <main>
-            <audio controls>
-                <source src="audio/Hi.mp3" type="audio/mp3">
-            </audio>
+            <div id="grid">
             <section id="entry1">
-                <h3>Monday, April 5th</h3>
+                <h3 id="journal1">Monday, April 5th</h3>
                 <p>Today I accompolished these things:</p>
                 <ul>
-                <li>Went to discussion</li>
-                    <li>Went to class</li>
-                    <li>Worked on schoolwork</li>
-                    <li>Did some more schoolwork</li>
-                    <li>Finished off my day with some refreshing schoolwork</li>
+                    <li class="main">Went to discussion</li>
+                    <li class="even main">Went to class</li>
+                    <li class="main">Worked on schoolwork</li>
+                    <li class="even main">Did some more schoolwork</li>
+                    <li class="main">Finished off my day with some refreshing schoolwork</li>
                 </ul>
-                <p>But hey, it's <em>only</em> the second week, so it should only get <b>better</b> from here on out. Anyways here's a meme I like:</p>
-                <img src="screenshots/free.jpg" height="400px">
+                <p id="footer">But hey, it's <em>only</em> the second week, so it should only get <b>better</b> from here on out. Anyways here's a meme I like:</p>
+                <img src="screenshots/free.jpg" class="meme">
             </section>
+            </div>
             <br>
             <section id="entry2">
                 <h3>Tuesday, April 6th</h3>
+                <audio controls style="background-color: rgba(160, 20, 100, .4);" class="audio">
+                    <source src="audio/Hi.mp3" type="audio/mp3">
+                </audio>
                 <p>Well, since I got so much done yesterday, I don't actually have that many assignments left to do. Here's what I've got:</p>
                 <ol>
                     <li>I've gotta get renrolled in that class after getting mistakenly dropped</li>
-                    <li>I need to look over my group's Math HW to make certain it doesn't have any mistakes</li>
+                    <li class="even">I need to look over my group's Math HW to make certain it doesn't have any mistakes</li>
                     <li>I should finish that assignement due on Thursday on practicing giving good feedback</li>
                 </ol>
-                <p><strong>Hey!</strong> I actually got that all done rather quick, <i>if I do say so myself.</i> 
-                    Now what? Maybe I should listen to some music. Here's one that reminds me of my teenage years:</p>
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/dvgZkm1xWPE" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><strong>Hey!</strong> I actually got that all done rather quick, <i>if I do say so myself.</i> </p>
                 </section>
             <br>
             <section id="entry3">
-                <h3>Wednesday April 7th</h3>
+                <h3 class="journal3">Wednesday April 7th</h3>
                 <p>Well whadyaknow, look's like it's my birthday. Well what better way to celebrate than to do schoolwork. 
                     Honestly, though, I <b>forgot</b> that I had this lab to do today. Well good thing I like coding!</p>
                 
@@ -60,23 +71,23 @@
                 <div class="mood">
                     <ul>
                         <li><input type="radio" name="day"/>Best day of my life!</li>
-                        <li><input type="radio" name="day" checked/>Pretty good!</li>
+                        <li class="even"><input type="radio" name="day" checked/>Pretty good!</li>
                         <li><input type="radio" name="day"/>Meh</li>
-                        <li><input type="radio" name="day"/>Could I just get to tomorrow already...</li>
+                        <li class="even"><input type="radio" name="day"/>Could I just get to tomorrow already...</li>
                         <li><input type="radio" name="day"/>Let's never speak of this day ever again.</li>
                     </ul>
                 </div>
                 <p>Anyways, you can watch this video to see me go over a more difficult problem:</p>
-                <video width="320" height="180" controls>
+                <video width="320" height="180" controls class="video">
                     <source src="video/problem.mp4" type="video/mp4">
                 </video>
                 <details>
-                    <summary>Oops</summary>
+                    <summary style="margin: auto;">Oops</summary>
                     <p>Oops, it's vertical. Well that shouldn't be a problem for you, <em>right?</em></p>
                 </details>
             </section>
             <section id="form">
-                <h3>Your turn!</h3>
+                <h3 style="text-decoration: underline overline purple; text-align: center;">Your turn!</h3>
                 <form>
                     <fieldset>
                         <input type="checkbox" name="check">
@@ -94,10 +105,10 @@
                         <input type="date" name="date">
                         <br>
                         <p>Alright, now you can write the journal:</p>
-                        <textarea name="entry"></textarea>
+                        <textarea name="entry" style="display: block;"></textarea>
                         <br>
                         <label for="mood">How are you feeling?</label>
-                        <input list="moods" name="mood" id="mood">
+                        <input list="moods" name="mood" id="mood" style="display: inline; position: absolute;">
                         <datalist id="moods">
                             <option value="Happy">
                             <option value="Sad">
@@ -106,9 +117,9 @@
                             <option value="Hungry">
                         </datalist>
                         <br>
-                        <label for="cars">On a scale of 1 to 5 how bad of an element is HTML's selector, where any number 
+                        <label for="scale">On a scale of 1 to 5 how bad of an element is HTML's selector, where any number 
                             between 1 and 5 represents awful and any other number means just alright:</label>
-                        <select name="scale" id="scale">
+                        <select name="scale" id="scale"> 
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -116,7 +127,7 @@
                             <option value="5">5</option>
                         </select>
                         <br>
-                        <button type="button">Click here when you're done!</button>
+                        <button type="button" style="display: block;">Click here when you're done!</button>
                     </fieldset>
                 </form>
             </section>
