@@ -86,8 +86,8 @@
                     <p>Oops, it's vertical. Well that shouldn't be a problem for you, <em>right?</em></p>
                 </details>
             </section>
-            <section id="form">
-                <h3>Your turn!</h3>
+           <section id="form">
+                <h3 style="text-decoration: underline overline purple; text-align: center;">Your turn!</h3>
                 <form>
                     <fieldset>
                         <input type="checkbox" name="check">
@@ -105,10 +105,10 @@
                         <input type="date" name="date">
                         <br>
                         <p>Alright, now you can write the journal:</p>
-                        <textarea name="entry"></textarea>
+                        <textarea name="entry" style="display: block;"></textarea>
                         <br>
                         <label for="mood">How are you feeling?</label>
-                        <input list="moods" name="mood" id="mood">
+                        <input list="moods" name="mood" id="mood" style="display: inline; position: absolute;">
                         <datalist id="moods">
                             <option value="Happy">
                             <option value="Sad">
@@ -117,9 +117,9 @@
                             <option value="Hungry">
                         </datalist>
                         <br>
-                        <label for="cars">On a scale of 1 to 5 how bad of an element is HTML's selector, where any number 
+                        <label for="scale">On a scale of 1 to 5 how bad of an element is HTML's selector, where any number 
                             between 1 and 5 represents awful and any other number means just alright:</label>
-                        <select name="scale" id="scale">
+                        <select name="scale" id="scale"> 
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -127,7 +127,7 @@
                             <option value="5">5</option>
                         </select>
                         <br>
-                        <button type="button">Click here when you're done!</button>
+                        <button type="button" style="display: block;">Click here when you're done!</button>
                     </fieldset>
                 </form>
             </section>
@@ -138,3 +138,4 @@
         </footer>
     </body>
 </html>
+
