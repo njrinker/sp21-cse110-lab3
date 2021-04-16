@@ -1,1 +1,119 @@
 
+/*Styling for memes*/
+.meme {
+    height: 400px;
+    width: 4in;
+}
+/*Styling for audio elements*/
+.audio {
+    height: 0.5in;
+    width: 100ex;
+}
+/*Styling for video elements*/
+.video {
+    height: 10em;
+    width: 10vw;
+    max-width: 5in;
+    min-width: 1in;
+}
+/*Styling for form*/
+#form {
+    /*Margin*/
+    margin: 3% 10% 3% 10%;
+    /*Padding*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    /*Border*/
+    border-style: groove;
+    border-color: aquamarine;
+    border-width: 7px;
+    border-radius: 1%;
+    /*Position*/
+    position: static;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}    
+
+form {
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: auto;
+    flex-flow: column wrap;
+}
+
+#form button:hover {
+    color: brown;
+    background-color: cadetblue;
+}
+
+a:active {
+    background-color: lawngreen;
+}
+
+@media only screen and (max-width: 2000px) {
+    body {
+      background-color: thistle;
+    }
+  }
+
+h1, h3 {
+    font-family: 'Lobster', cursive;
+}
+
+* {
+    text-indent: 0%;
+}
+
+a[target="_link2"] {
+    color: teal;
+}
+
+ol li {
+    color: tomato;
+}
+
+details > summary {
+    background-color: violet;
+}
+
+div + p {
+    background-color: whitesmoke;
+}
+
+summary ~ p {
+    background-color: wheat;
+}
+
+li.even {
+    background-color: cadetblue;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        "main main main main main"
+        "footer footer footer footer footer";
+}
+
+#journal1 {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
