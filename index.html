@@ -4,21 +4,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My journal (no one read except me!)</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster|Raleway' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/index.css">
         <link rel="icon" type="image/jpg" href="/screenshots/calcifer.jpg" />
     </head>
     <body>
         <header>
+            <style>
+                h1 {
+                    color:purple;
+                }
+                #journal1 {
+                    color: #37898f;
+                }
+                .journal3 {
+                    color: hsla(115, 48%, 45%, 0.795);
+                }
+            </style>
             <h1>Journal for CSE 110</h1>
             <nav>
                 <ol>
                     <li><a href="#entry1">Entry 1</a></li>
-                    <li><a href="#entry2">Entry 2</a></li>
+                    <li><a href="#entry2" target="_link2">Entry 2</a></li>
                     <li><a href="#entry3">Entry 3</a></li>
                 </ol>
             </nav>
         </header>
         <hr>
+        <main>
+            <div id="grid">
+            <section id="entry1">
+                <h3 id="journal1">Monday, April 5th</h3>
+                <p>Today I accompolished these things:</p>
+                <ul>
+                    <li class="main">Went to discussion</li>
+                    <li class="even main">Went to class</li>
+                    <li class="main">Worked on schoolwork</li>
+                    <li class="even main">Did some more schoolwork</li>
+                    <li class="main">Finished off my day with some refreshing schoolwork</li>
+                </ul>
+                <p id="footer">But hey, it's <em>only</em> the second week, so it should only get <b>better</b> from here on out. Anyways here's a meme I like:</p>
+                <img src="screenshots/free.jpg" class="meme">
+            </section>
+            </div>
+            <br>
         <main>
             <audio controls>
                 <source src="audio/Hi.mp3" type="audio/mp3">
